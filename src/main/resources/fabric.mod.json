@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modtest",
+	"version": "${version}",
+	"name": "ModTest",
+	"description": "Primul meu mod -Azlo",
+	"authors": [
+		"5x3Alone!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modtest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.azlo.modtest.ModTest"
+		],
+		"fabric-datagen": [
+			"com.example.azlo.modtest.ModTestDataGenerator"
+		],
+		"client": [
+			"com.example.azlo.modtest.ModTestClient"
+			]
+			},
+	"mixins": [
+		"modtest.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
